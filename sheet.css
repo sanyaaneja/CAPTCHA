@@ -1,0 +1,37 @@
+.canvas_div{
+    display: inline-block;
+}
+
+body { display: block; 
+    margin: 0; 
+    padding: 0;
+    text-align:center;
+    height: 100vh;
+
+}
+canvas {
+  margin-top: 10px;
+}
+.center-container
+{
+    display: inline-block;
+    text-align:left;
+}
+.center-button{
+    margin: 0 5px;
+}
+
+footer{
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (min-width:768px){
+    .center-container {
+        text-align:center;
+    }
+    canvas{
+        margin-left: 10px;
+    }
+}

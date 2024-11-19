@@ -1,0 +1,42 @@
+<!--mimic the facilities of a simple image recognition CAPTCHA application-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="sheet.css">
+        <title>SanyaCAPTCHA</title>
+    </head>
+
+    
+    <body>
+    <!--canvas element, some buttons and some text.-->
+        <!--randomly chosen from one of these two each time-->
+        <!--five images in a row on the canvas, with borders between them-->
+        <!--shapes drawn with standard canvas commands (rect, ellipse)-->
+        <!--minimum of three pieces and a maximum of seven pieces-->
+        <h1>SanyaCAPTCHA</h1>
+        <p id = "text"></p>
+        <div class = "canvas_div"><canvas id="canvas_example" width="500" height="100"> </canvas></div>
+        <br>
+        <br>
+        <button id = "verify">Verify</button>
+
+        <button id = "reinitialise">Reinitialise</button>
+
+        <script src="./draw copy 2.js">"use strict;"</script>
+
+        
+        <footer>
+            <!--copyright symbol, your name and the year-->
+            <p>Overview: Using function select() to generate which image to select in the given captcha.
+            The images (moon, door) assembled are a combination of several shapes. Further, the function randomise() displays either of the two in each cell of the grid; created by positioning strokes on the canvas.
+            Highlighted the selected cell by adding a red border and deselecting it by changing the border to its default by clicking twice.
+            Indexed cells of images are to be selected in an array and compared with an array of selected cells in the verify() function. Displayed a success message if the correct set of images is selected, reinitialising the canvas and initial values if the user fails the first time and displaying a failed message the second time.
+            Adjusted for mobile and desktop hardware using media query in css stylesheet.</p>
+            <p>&#169; Sanya Aneja 2023</p>
+        </footer>
+    </body>
+</html>
+
+
+
